@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/ErickEspinosa.Redis/.vs/ErickEspinosa.Redis
+/ErickEspinosa.Redis/ErickEspinosa.Redis.WebApi/obj
+/ErickEspinosa.Redis/ErickEspinosa.Redis.WebApi/bin/Debug/net6.0
+*.user
