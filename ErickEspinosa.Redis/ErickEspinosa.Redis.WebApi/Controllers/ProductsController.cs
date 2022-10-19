@@ -12,15 +12,15 @@ namespace ErickEspinosa.Redis.WebApi.Controllers
         [Cached(600)]
         [HttpGet]
         public async Task<IActionResult> GetAll()
-        {
-            return Ok(FakeRepository.GetProducts());
-        }
+        => Ok(FakeRepository.GetProducts());
 
         [Cached(600)]
         [Route("{id}")]
+        [HttpGet]
         public async Task<IActionResult> GetById(Guid id)
         {
-            return Ok(FakeRepository.GetProducts().First(x => x.Id == id));
+            var product = FakeRepository.GetProduct(id);
+            return product is null ? NotFound() : Ok(product);
         }
     }
 }

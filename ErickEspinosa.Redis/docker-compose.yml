@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  erickespinosa.redis.webapi:
+    image: ${DOCKER_REGISTRY-}erickespinosarediswebapi
+    build:
+      context: .
+      dockerfile: ErickEspinosa.Redis.WebApi/Dockerfile
+  redis-compose:
+    image: redis
+    command: redis-server
+    hostname: redis
+    ports:
+      - "6379:6379"

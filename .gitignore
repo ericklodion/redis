@@ -6,3 +6,5 @@
 /ErickEspinosa.Redis/ErickEspinosa.Redis.WebApi/obj
 /ErickEspinosa.Redis/ErickEspinosa.Redis.WebApi/bin/Debug/net6.0
 *.user
+/ErickEspinosa.Redis/bin/Debug
+/ErickEspinosa.Redis/obj
